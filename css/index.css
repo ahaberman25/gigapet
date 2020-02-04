@@ -202,8 +202,7 @@ img {
   width: 135px;
 }
 .container .hero-container {
-  background-color: white;
-  height: 800px;
+  background-color: rgba(57, 73, 171, 0.59);
   width: 100%;
 }
 .container .hero-container .logobox img {
@@ -211,7 +210,43 @@ img {
   height: 180px;
 }
 .container .hero-container .hero-text h1 {
-  color: #3949ab;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.container .hero-container .monsters-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 5%;
+}
+.container .hero-container .monsters-container .monster {
+  width: 25%;
+}
+.container .hero-container .join-btn {
+  text-align: center;
+  padding-bottom: 4%;
+}
+.container .hero-container .join-btn button {
+  box-shadow: 0px 19px 14px -7px #3e7327;
+  background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+  background-color: #77b55a;
+  border-radius: 9px;
+  border: 2px solid #4b8f29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 76px;
+  text-decoration: none;
+}
+.container .info-boxes {
+  display: flex;
+}
+.container .info-boxes .box {
+  width: 33%;
 }
 @font-face {
   font-family: 'Bubblegum Sans';
