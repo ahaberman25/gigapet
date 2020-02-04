@@ -198,7 +198,7 @@ img {
   display: flex;
 }
 .container .top-bar-nav .btn-bar .col span {
-  font-size: 3em;
+  font-size: 2em;
 }
 .container .top-bar-nav .btn-bar .col .parent-btn {
   height: 61px;
@@ -256,7 +256,7 @@ main {
   max-width: 500px;
   margin: auto;
 }
-p {
+.member {
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
@@ -269,7 +269,7 @@ p {
   position: relative;
   color: black;
 }
-p:before {
+.member:before {
   content: counter(section);
   position: absolute;
   border-radius: 50%;
@@ -282,28 +282,28 @@ p:before {
   color: white;
   font-size: 1em;
 }
-p:nth-child(odd) {
+.member:nth-child(odd) {
   border-right: 3px solid;
   padding-left: 0;
 }
-p:nth-child(odd):before {
+.member:nth-child(odd):before {
   left: 100%;
   margin-left: -20px;
 }
-p:nth-child(even) {
+.member:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
 }
-p:nth-child(even):before {
+.member:nth-child(even):before {
   right: 100%;
   margin-right: -20px;
 }
-p:first-child {
+.member:first-child {
   border-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-p:last-child {
+.member:last-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
