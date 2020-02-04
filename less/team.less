@@ -4,7 +4,7 @@ main {
   margin: auto;
 }
 
-p {
+.member {
   font-size: 1em;
   line-height: 1.75em;
   border-top: 3px solid;
@@ -33,7 +33,7 @@ p {
   }
 }
 //odd number borders
-p:nth-child(odd) {
+.member:nth-child(odd) {
   border-right: 3px solid;
   padding-left: 0;
   
@@ -43,7 +43,7 @@ p:nth-child(odd) {
   }
 }
 //even number borders
-p:nth-child(even) {
+.member:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
   
@@ -53,12 +53,12 @@ p:nth-child(even) {
   }
 }
 //handle first and last
-p:first-child {
+.member:first-child {
   border-top: 0;
   border-top-right-radius:0;
   border-top-left-radius:0;
 }
-p:last-child {
+.member:last-child {
   border-bottom-right-radius:0;
   border-bottom-left-radius:0;
 }
