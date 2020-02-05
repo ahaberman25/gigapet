@@ -167,6 +167,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+footer {
+  text-align: center;
+  padding: 1%;
+  background-color: #fff8f0;
+}
 .container .top-bar-nav nav {
   height: 39px;
   width: 100%;
@@ -250,6 +255,30 @@ img {
 }
 .container .info-boxes .box {
   width: 33%;
+  padding: 5%;
+}
+.container .info-boxes .box .icon {
+  text-align: center;
+  padding: 8%;
+  color: white;
+}
+.container .info-boxes .box .icon .fas,
+.container .info-boxes .box .icon .fab {
+  font-size: 5em;
+}
+.container .info-boxes .box .content {
+  font-size: 2em;
+  padding: 2%;
+  color: white;
+}
+.container .info-boxes .one {
+  background-color: #18A3A0;
+}
+.container .info-boxes .two {
+  background-color: #FD8620;
+}
+.container .info-boxes .three {
+  background-color: #E9446E;
 }
 main {
   min-width: 300px;
