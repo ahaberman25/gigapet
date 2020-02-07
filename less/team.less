@@ -16,7 +16,12 @@ main {
   counter-increment: section;
   position: relative;
   color: black;
-  
+
+  span {
+    font-size: 3em;
+    font-weight: 900;
+  }
+
   //numbers
   &:before {
     content: counter(section);
@@ -32,47 +37,38 @@ main {
     font-size: 1em;
   }
 }
+
 //odd number borders
 .member:nth-child(odd) {
   border-right: 3px solid;
   padding-left: 0;
-  
+
   &:before {
-    left: 100%; 
+    left: 100%;
     margin-left: -20px;
   }
 }
+
 //even number borders
 .member:nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
-  
+
   &:before {
-    right: 100%; 
+    right: 100%;
     margin-right: -20px;
   }
 }
+
 //handle first and last
 .member:first-child {
   border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
+
 .member:last-child {
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-//members
-
-.jesse-tingle {
-
-    span {
-        font-size: 3em;
-        font-weight: 900;
-    }
-
-    img {
-        
-    }
-}
