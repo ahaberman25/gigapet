@@ -167,29 +167,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-footer {
-  text-align: center;
-  padding: 1%;
-  background-color: #fff8f0;
-}
-.container .top-bar-nav nav {
+.top-bar-nav nav {
   height: 39px;
   width: 100%;
   background-color: #d4e157;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
-.container .top-bar-nav nav .nav-links {
+@media (max-width: 500px) {
+  .top-bar-nav nav {
+    justify-content: center;
+  }
+}
+.top-bar-nav nav .nav-links {
   width: 275px;
   padding-top: 0.8%;
   font-size: 1.5em;
 }
-.container .top-bar-nav nav .nav-links a {
+.top-bar-nav nav .nav-links a {
   margin: 2%;
   text-decoration: none;
   color: black;
 }
-.container .top-bar-nav .btn-bar {
+.top-bar-nav .btn-bar {
   height: 80px;
   width: 100%;
   background-color: #0097a7;
@@ -198,16 +199,22 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.container .top-bar-nav .btn-bar .col {
+.top-bar-nav .btn-bar .col {
   color: white;
   display: flex;
+  flex-direction: row;
 }
-.container .top-bar-nav .btn-bar .col span {
+.top-bar-nav .btn-bar .col span {
   font-size: 2em;
 }
-.container .top-bar-nav .btn-bar .col .parent-btn {
+.top-bar-nav .btn-bar .col .parent-btn {
   height: 61px;
   width: 135px;
+}
+footer {
+  text-align: center;
+  padding: 1%;
+  background-color: #fff8f0;
 }
 .container .hero-container {
   background-color: rgba(57, 73, 171, 0.59);
@@ -217,14 +224,27 @@ footer {
   width: 175px;
   height: 180px;
 }
+@media (max-width: 500px) {
+  .container .hero-container .logobox img {
+    position: relative;
+    left: 160px;
+    padding-bottom: 5%;
+  }
+}
 .container .hero-container .hero-text h1 {
   color: white;
   font-size: 5rem;
   text-align: center;
   padding-bottom: 3%;
 }
+@media (max-width: 500px) {
+  .container .hero-container .hero-text h1 {
+    font-size: 3.5rem;
+  }
+}
 .container .hero-container .monsters-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   padding-bottom: 5%;
 }
@@ -252,10 +272,23 @@ footer {
 }
 .container .info-boxes {
   display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .container .info-boxes {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .info-boxes .box {
-  width: 33%;
+  width: 33.4%;
   padding: 5%;
+}
+@media (max-width: 500px) {
+  .container .info-boxes .box {
+    width: 100%;
+    padding: 10%;
+  }
 }
 .container .info-boxes .box .icon {
   text-align: center;
@@ -298,6 +331,10 @@ main {
   position: relative;
   color: black;
 }
+.member span {
+  font-size: 3em;
+  font-weight: 900;
+}
 .member:before {
   content: counter(section);
   position: absolute;
@@ -335,10 +372,6 @@ main {
 .member:last-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-}
-.jesse-tingle span {
-  font-size: 3em;
-  font-weight: 900;
 }
 @font-face {
   font-family: 'Bubblegum Sans';

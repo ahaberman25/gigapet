@@ -3,56 +3,6 @@
 
 .container {
 
-
-  .top-bar-nav {
-
-
-    nav {
-      height: 39px;
-      width: 100%;
-      background-color: @mon-green;
-      display: flex;
-      justify-content: flex-end;
-
-      .nav-links {
-        width: 275px;
-        padding-top: .8%;
-        font-size: 1.5em;
-        a {
-          margin: 2%;
-          text-decoration: none;
-          color: black;
-        }        
-      }
-    }
-
-    .btn-bar {
-      height: 80px;
-      width: 100%;
-      background-color: @mon-teal;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-      .col {
-        color: white;
-        display: flex;
-
-        span {
-          font-size: 2em;
-        }
-
-        .parent-btn {
-          height: 61px;
-          width: 135px;
-        }
-        
-        
-      }
-    }
-  }
-
   .hero-container {
     background-color: @mon-blue;
     width: 100%;
@@ -61,6 +11,12 @@
       img {
         width: 175px;
         height: 180px;
+
+        @media @mobile {
+          position: relative;
+          left: 160px;
+          padding-bottom: 5%;
+        }
       }
     }
 
@@ -70,11 +26,15 @@
         font-size: 5rem;
         text-align: center;
         padding-bottom: 3%;
+
+        @media @mobile {
+          font-size: 3.5rem;
+        }
       }
     }
 
     .monsters-container {
-      display: flex;
+      .flex-it-up(row);
       flex-wrap: nowrap;
       padding-bottom: 5%;
 
@@ -106,11 +66,20 @@
   }
 
   .info-boxes {
-    display: flex;
+    .flex-it-up(row);
+
+    @media @mobile {
+      .flex-it-up(column);
+    }
 
     .box {
-      width: 33%;
+      width: 33.4%;
       padding: 5%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 10%;
+      }
 
       .icon {
         text-align: center;

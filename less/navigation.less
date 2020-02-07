@@ -1,0 +1,51 @@
+.top-bar-nav {
+
+
+    nav {
+      height: 39px;
+      width: 100%;
+      background-color: @mon-green;
+      .flex-it-up(row);
+      justify-content: flex-end;
+
+      @media @mobile {
+          justify-content: center;
+      }
+
+      .nav-links {
+        width: 275px;
+        padding-top: .8%;
+        font-size: 1.5em;
+        a {
+          margin: 2%;
+          text-decoration: none;
+          color: black;
+        }        
+      }
+    }
+
+    .btn-bar {
+      height: 80px;
+      width: 100%;
+      background-color: @mon-teal;
+      .flex-it-up(row);
+      justify-content: space-between;
+      align-items: center;
+
+      .col {
+        color: white;
+        .flex-it-up(row);
+
+        span {
+          font-size: 2em;
+        }
+
+        .parent-btn {
+          height: 61px;
+          width: 135px;
+        }
+        
+        
+      }
+    }
+  }
